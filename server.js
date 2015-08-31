@@ -10,10 +10,18 @@ var JSFtp = require("jsftp");
 
 var Ftp = new JSFtp(
 {
-	host: "myserver.com",
-	port: 3331, // defaults to 21
-	user: "user", // defaults to "anonymous"
-	pass: "1234" // defaults to "@anonymous"
+	host: "104.131.116.161",
+	port: 21, // defaults to 21
+	user: "root", // defaults to "anonymous"
+	pass: "blucakes" // defaults to "@anonymous"
+});
+
+Ftp.raw.mkd("/new_dir", function(err, data)
+{
+	if (err) return console.error(err);
+
+	console.log(data.text); // Show the FTP response text to the user
+	console.log(data.code); // Show the FTP response code to the user
 });
 
 
