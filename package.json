@@ -1,0 +1,15 @@
+{
+  "name": "md_ftp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Alton Friest <alton.friest.software@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "jsftp": "^1.5.2"
+  }
+}
